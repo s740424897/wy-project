@@ -60,13 +60,14 @@
         flex 1
         text-align center
         list-style none
+        margin-bottom 3px
 
         &.active
           color #b4282d
 
         .u-icon
           display inline-block
-          margin-bottom 15px
+          margin-bottom 20px
           width 40px
           height 40px
           background-image url("http://yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/tabBar-s43a0dc8a7d-2a8cea5605.png")

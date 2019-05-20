@@ -1,5 +1,6 @@
 import ajax from './ajax.js'
 
-const prefix = './api'
 
-export const reqHomeMock = () => ajax('/mock/home');
+export const MockHome = () => ajax('/mock/home');
+export const InitSearch =()=> ajax('/mock/search');
+export const SearchResult =()=>ajax('/mock/search');
