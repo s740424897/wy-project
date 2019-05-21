@@ -5,7 +5,7 @@
         <p class="title">{{shoppingGuide.styleItem.title}}</p>
         <p class="desc">{{shoppingGuide.styleItem.desc}}</p>
         <div>
-          <img :src="itemPic.picUrl" v-for="(itemPic,index) in shoppingGuide.styleItem.itemPicBeanList" :key="index" alt="" />
+          <img v-lazy="itemPic.picUrl" :src="itemPic.picUrl" v-for="(itemPic,index) in shoppingGuide.styleItem.itemPicBeanList" :key="index" alt="" />
         </div>
       </li>
     </ul>

@@ -4,10 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './Vuex/Store'
-import HeaderSlot from './components/HeaderSlot/headerslot'
+import VueLazy from 'vue-lazyload'
+import loadingGif from './common/img/loading.gif'
+import HeaderSlot from './components/HeaderSlot/HeaderSlot.vue'
 import Split from './components/Split/split'
 import './mockData/mockServer'
 import './filter'
+
+Vue.use(VueLazy,{loading:loadingGif})
 Vue.component('HeaderSlot',HeaderSlot);
 Vue.component('Split', Split);
 Vue.config.productionTip = false

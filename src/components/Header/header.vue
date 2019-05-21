@@ -55,7 +55,6 @@
 <script>
   import BScroll from 'better-scroll'
   export default {
-    name: 'header',
     data(){
       return {
         curA:0,

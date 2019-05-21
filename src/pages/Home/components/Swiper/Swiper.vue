@@ -2,7 +2,7 @@
       <div class="swiper-container">
         <ul class="swiper-wrapper">
           <li class="swiper-slide" v-for="(i,index) in imgs" :key="index">
-            <img  :src="i" alt="img"/>
+            <img v-lazy="i" :src="i" alt="img"/>
           </li>
         </ul>
         <!-- 如果需要分页器 -->

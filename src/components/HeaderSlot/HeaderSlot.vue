@@ -1,23 +1,23 @@
 <template>
-  <div class="header-slot-box">
-    <div class="left-box" @click="$router.replace('./home')">
+  <div class="header_slot_box">
+    <div class="left_box" @click="$router.replace('/home')">
       <i class="iconfont icon-shouye"></i>
     </div>
-    <div class="center-box">
+    <div class="center_box">
       <slot name="netease"></slot>
       <slot name="fond"></slot>
       <slot name="specia_choice"></slot>
     </div>
-    <div class="right-box">
+    <div class="right_box">
       <i class="iconfont icon-sousuo" @click="$router.push('/search')"></i>
-      <i class="iconfont icon-gouwuche" @click="$router.push('/shopcar')"></i>
+      <i class="iconfont icon-gouwuche" @click="$router.replace('/shopcar')"></i>
     </div>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'headerslot'
+    name: 'HeaderSlot'
   }
 </script>
 
@@ -66,4 +66,3 @@
         font-size 46px
         margin-right 24px
 </style>
-

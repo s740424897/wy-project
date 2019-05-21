@@ -6,7 +6,7 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="(personalShop, index) in personalShopArr" :key="index">
             <div class="personalShop-item" v-for="(good ,index) in personalShop" :key="index">
-              <img class="primaryPic" v-lazy="good.primaryPicUrl" :src="good.primaryPicUrl" :alt="good.name">
+              <img v-lazy="good.primaryPicUrl" class="primaryPic" :src="good.primaryPicUrl" :alt="good.name">
               <div class="text">
                 <span class="name">{{good.name}}</span>
                 <span class="price">¥{{good.retailPrice}}</span>

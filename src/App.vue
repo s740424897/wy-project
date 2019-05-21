@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <Header v-show="$route.meta.showHeader"></Header>
+    <HeaderTab v-show="$route.meta.showHeader"></HeaderTab>
     <router-view></router-view>
-    <Footer v-show="$route.meta.showFooter"></Footer>
+    <FooterTab v-show="$route.meta.showFooter"></FooterTab>
   </div>
 </template>
 
 <script>
-import Footer from './components/Foooter/footer'
-import Header from './components/Header/header'
+import FooterTab from './components/Foooter/footer'
+import HeaderTab from './components/Header/header'
 export default {
   name: 'App',
   components: {
-    Header,
-    Footer
-
+    HeaderTab,
+    FooterTab
   }
 }
 </script>

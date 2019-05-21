@@ -10,6 +10,18 @@
     <PersonalShop></PersonalShop>
     <Split></Split>
     <FlashSale></FlashSale>
+    <Split></Split>
+    <NewGoods></NewGoods>
+    <Split></Split>
+    <Recommended></Recommended>
+    <Split></Split>
+    <TopList></TopList>
+    <Split></Split>
+    <ZhongC></ZhongC>
+
+
+    <CategoryList></CategoryList>
+    <BottomTab></BottomTab>
   </div>
 </template>
 
@@ -20,6 +32,12 @@
   import SceneLight from './components/SceneLight/SceneLight'
   import PersonalShop from './components/PersonalShop/PersonalShop'
   import FlashSale from './components/FlashSale/FlashSale'
+  import NewGoods from './components/NewGoods/NewGoods'
+  import Recommended from './components/Recommended/Recommended'
+  import TopList from './components/TopList/TopList'
+  import ZhongC from './components/ZhongC/ZhongC'
+  import CategoryList from './components/CategoryList/CategoryList'
+  import BottomTab from './components/BottomTab/BottomTab'
   export default {
     name:'Home',
     components:{
@@ -28,7 +46,13 @@
       Goods,
       SceneLight,
       PersonalShop,
-      FlashSale
+      FlashSale,
+      NewGoods,
+      Recommended,
+      TopList,
+      ZhongC,
+      CategoryList,
+      BottomTab
     }
   }
 </script>
